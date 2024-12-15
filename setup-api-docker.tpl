@@ -28,7 +28,7 @@ echo "Lanzando contenedor de la API"
 docker run -d \
     --name books-api \
     -p 80:3000 \
-    -e TUTORIAL_HOST=<direccion-ip-fija-instancia-MySQL> \
+    -e TUTORIAL_HOST=${mysql_ip} \
     -e TUTORIAL_PORT=3306 \
     -e TUTORIAL_USER=sg \
     -e TUTORIAL_PASSWORD=my_password \
