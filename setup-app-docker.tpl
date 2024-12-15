@@ -26,7 +26,7 @@ chmod +x /usr/local/bin/docker-compose
 echo "Lanzando el contenedor books-app"
 
 docker run -p 80:80 \
-  -e BOOK_API_HOST=<direccion-ip-fija-instancia-API> \
+  -e BOOK_API_HOST=${book_api_ip} \
   ualmtorres/books-app:v0
 
 exit 0
