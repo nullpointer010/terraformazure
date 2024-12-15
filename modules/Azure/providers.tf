@@ -1,8 +1,10 @@
-provider "openstack" {
-# *** YOUR CODE HERE ***
-# Configura nombre de usuario, proyecto, contraseña y auth_url 
-# con lo definido en variables.tf
-# **********************
+provider "azurerm" {
+  features {}
+
+  tenant_id       = var.azure_tenant_id
+  client_id       = var.azure_user_name
+  client_secret   = var.azure_password
+  subscription_id = "id"  # cambiar
 }
 
 
