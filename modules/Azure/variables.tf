@@ -1,13 +1,20 @@
-# *** YOUR CODE HERE ***
-# Definir estas 4 variables
-# * openstack_user_name inicializada con el nombre de usuario en OpenStack
-# * openstack_tenant_name inicializada con el nombre del proyecto en OpenStack
-# * openstack_password inicializada con la contraseña en OpenStack
-# * openstack_keypair: Nombre del archivo de claves en OpenStack
-
-variable "openstack_auth_url" {
-    description = "The endpoint url to connect to OpenStack."
-    default  = "http://openstack.di.ual.es:5000/v3"
+variable "azure_user_name" {
+  description = "El nombre de usuario en Azure."
+  default     = ""
 }
 
+variable "azure_tenant_id" {
+  description = "El Tenant ID del directorio en Azure."
+  default     = ""
+}
+
+variable "azure_password" {
+  description = "La contraseña del usuario en Azure."
+  default     = ""
+}
+
+variable "azure_keypair" {
+  description = "El nombre del archivo de claves SSH que se usará."
+  default     = ""
+}
 
