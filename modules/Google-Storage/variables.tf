@@ -5,7 +5,7 @@
 
 variable "gcp_username" {
   description = "El nombre de usuario en Google Cloud Platform (GCP)."
-  default     = ""  # Sustituye con el nombre de usuario real
+  default     = "" 
 }
 
 variable "gcp_project" {
